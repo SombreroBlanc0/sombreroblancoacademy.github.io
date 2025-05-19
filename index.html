@@ -5,23 +5,108 @@
   <title>Reglamentación Sombrero Blanco Academy</title>
   <style>
     body {
-      background-color: black;
+      background-color: #000;
       color: #00ff00;
       font-family: 'Courier New', Courier, monospace;
-      padding: 30px;
+      padding: 40px;
+      margin: 0;
+    }
+
+    .ascii-art {
+      white-space: pre;
+      font-size: 12px;
+      color: #00ff00;
+      text-shadow: 0 0 5px #00ff00;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 2em;
+      text-transform: uppercase;
+      font-size: 24px;
       border-bottom: 2px solid #00ff00;
       padding-bottom: 10px;
       margin-bottom: 20px;
-      text-transform: uppercase;
     }
 
     .terminal-box {
+      background-color: #010101;
       border: 1px solid #00ff00;
       padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10p
+      box-shadow: 0 0 10px #00ff00;
+      animation: pulse 2s infinite;
+    }
 
+    .link-box {
+      margin-top: 20px;
+    }
+
+    a {
+      color: #00ff00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background-color: #00ff00;
+      color: black;
+      padding: 3px;
+    }
+
+    .blinker {
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 10px #00ff00;
+      }
+      50% {
+        box-shadow: 0 0 20px #00ff00;
+      }
+      100% {
+        box-shadow: 0 0 10px #00ff00;
+      }
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.8em;
+      color: #00cc00;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ascii-art">
+  {====================================================}
+  ||  ____  _                 _                     _ ||
+  || / ___|| |__   ___   ___ | | __ ___   ____ _ __| || 
+  || \___ \| '_ \ / _ \ / _ \| |/ _` \ \ / / _` / __| ||
+  ||  ___) | | | | (_) | (_) | | (_| |\ V / (_| \__ \ ||
+  || |____/|_| |_|\___/ \___/|_|\__,_| \_/ \__,_|___/ ||
+  ||              SOMBRERO BLANCO ACADEMY             ||
+  {====================================================}
+  </div>
+
+  <h1>▌REGLAMENTACIÓN ACADEMICA</h1>
+
+  <div class="terminal-box">
+    <p>&gt; ACCESO A DOCUMENTACIÓN OFICIAL <span class="blinker">_</span></p>
+    <div class="link-box">
+      📄 <a href="REGLAMENTO%20ACADEMICO%20SBA.pdf" target="_blank">Descargar REGLAMENTO ACADEMICO SBA.pdf</a>
+    </div>
+    <p style="margin-top: 20px;">> Documento actualizado y disponible para toda la comunidad estudiantil.</p>
+  </div>
+
+  <div class="footer">
+    :: Sombrero Blanco Academy | Acceso controlado ::
+  </div>
+
+</body>
+</html>
